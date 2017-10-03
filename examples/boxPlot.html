@@ -34,9 +34,7 @@
           .x(function(d) { return d.label })
           .staggerLabels(true)
           .maxBoxWidth(75) // prevent boxes from being incredibly wide
-          .yDomain([0, 500])
-          ;
-
+          .yDomain([0, 500]);
       d3.select('#chart1 svg')
           .datum(exampleData())
           .call(chart);
